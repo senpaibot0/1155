@@ -1,0 +1,56 @@
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:elevation="4dp"
+
+    android:stretchColumns="1"
+    android:background="@drawable/just_do_it_bg">
+
+    <TableRow
+        android:background="@color/white"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:padding="8dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:background="@android:color/transparent"
+            android:padding="8dp"/>
+    </TableRow>
+
+    <TableRow
+        android:background="@color/white"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:padding="8dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:background="@android:color/transparent"
+            android:padding="8dp"/>
+    </TableRow>
+
+    <TableRow
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="8dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:elevation="2dp"/>
+    </TableRow>
+</TableLayout>
