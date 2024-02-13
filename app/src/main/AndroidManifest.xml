@@ -15,7 +15,7 @@
         android:theme="@style/Theme.JustDidIt"
         tools:targetApi="34">
         <activity
-            android:name=".Dashboard"
+            android:name=".CreateTache"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
