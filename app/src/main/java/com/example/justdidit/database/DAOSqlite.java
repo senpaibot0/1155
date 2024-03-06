@@ -15,7 +15,7 @@ public class DAOSqlite {
 
     // ouvrir la database:
     void open() throws SQLException {
-        database = dbHelper.getWritetableDatabase();
+        database = dbHelper.getWritableDatabase();
     }
     // fermer la db
 

@@ -23,7 +23,7 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
     private static final int DATABASE_VERSION = 1;
 
     // creation des commande initiaux sql
-    private static final String DATABASE_DROP_TABLE_IF_EXIT = "drop table if exist "
+    private static final String DATABASE_DROP_TABLE_IF_EXIT = "drop table if exists "
             + Table_Taches ;
     private static final String DATABASE_CREATE = "create table "
             + Table_Taches
