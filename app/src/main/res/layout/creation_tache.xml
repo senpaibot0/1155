@@ -10,121 +10,151 @@
 
     <TableRow
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="8dp"
-        android:background="@color/white"
-        android:gravity="center_horizontal">
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@android:color/transparent"
+        android:gravity="center_horizontal"
+        android:paddingBottom="125dp">
 
         <TextView
             android:id="@+id/titreCreation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:background="@android:color/white"
             android:gravity="center"
-            android:padding="8dp"
+            android:padding="20dp"
             android:text="Creation de tache" />
 
     </TableRow>
 
     <TableRow
-        android:background="@color/white"
+        android:background="@android:color/transparent"
         android:layout_marginBottom="8dp">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Titre"
-            android:padding="8dp"/>
-        <EditText
+            android:id="@+id/titreTV"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:padding="8dp"
+            android:text="Titre :" />
+
+        <EditText
+            android:id="@+id/TitreEDT"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="25dp"
+            android:background="@color/white"
             android:inputType="textPersonName"
-            android:background="@android:color/transparent"
-            android:padding="8dp"/>
+            android:gravity="center"
+            android:padding="8dp" />
     </TableRow>
 
     <TableRow
-        android:background="@color/white"
+        android:background="@android:color/transparent"
         android:layout_marginBottom="8dp">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Decription"
-            android:padding="8dp"/>
-        <EditText
+            android:id="@+id/descTV"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:padding="8dp"
+            android:text="Decription :" />
+
+        <EditText
+            android:id="@+id/DescEDT"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="25dp"
+            android:background="@android:color/white"
             android:inputType="textEmailAddress"
-            android:background="@android:color/transparent"
-            android:padding="8dp"/>
+            android:gravity="center"
+            android:padding="8dp" />
     </TableRow>
 
     <TableRow
-        android:background="@color/white"
+        android:background="@android:color/transparent"
         android:layout_marginBottom="8dp">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Date De Debut"
-            android:padding="8dp"/>
+            android:id="@+id/DateDebutTV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:padding="8dp"
+            android:text="Date De Debut" />
 
         <EditText
             android:id="@+id/editTextDate"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:ems="10"
             android:hint="Format: aaaa-mm-jj"
+            android:layout_marginStart="25dp"
+            android:background="@color/white"
+            android:gravity="center"
             android:inputType="date" />
     </TableRow>
 
     <TableRow
-        android:background="@color/white"
+        android:background="@android:color/transparent"
         android:layout_marginBottom="8dp">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Date De Fin"
-            android:padding="8dp"/>
+            android:id="@+id/DateFinTV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:padding="8dp"
+            android:text="Date De Fin" />
 
         <EditText
             android:id="@+id/editTextDate2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:ems="10"
             android:hint="Format: aaaa-mm-jj"
+            android:layout_marginStart="25dp"
+            android:background="@color/white"
+            android:gravity="center"
             android:inputType="date" />
     </TableRow>
     <TableRow
-        android:background="@color/white"
+        android:background="@android:color/transparent"
         android:layout_marginBottom="8dp">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Nombre de jours"
-            android:padding="8dp"/>
+            android:id="@+id/JourTV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:padding="8dp"
+            android:text="Nombre de jours" />
 
         <TextView
             android:id="@+id/nombre_de_jour"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginStart="25dp"
+            android:background="@color/white"
             android:gravity="center"
-            android:hint="Entrer d'abord les dates en haut"
-            />
+            android:hint="Entrer d'abord Dates" />
     </TableRow>
 
     <TableRow
-        android:background="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="246dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/transparent"
         android:gravity="center_horizontal"
-        android:layout_marginBottom="8dp">
+        android:paddingTop="25dp">
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Enregistrer la tache"
-            android:elevation="2dp"/>
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="2dp"
+            android:text="Enregistrer la tache" />
     </TableRow>
 </TableLayout>
