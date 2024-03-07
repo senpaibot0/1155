@@ -4,9 +4,27 @@
     android:layout_height="wrap_content"
     android:padding="8dp"
     android:elevation="4dp"
-
+    android:gravity="center"
     android:stretchColumns="1"
     android:background="@drawable/just_do_it_bg">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:background="@color/white"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/titreCreation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Creation de tache" />
+
+    </TableRow>
 
     <TableRow
         android:background="@color/white"
@@ -15,7 +33,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Name"
+            android:text="Titre"
             android:padding="8dp"/>
         <EditText
             android:layout_width="match_parent"
@@ -32,7 +50,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Email"
+            android:text="Decription"
             android:padding="8dp"/>
         <EditText
             android:layout_width="match_parent"
@@ -44,13 +62,69 @@
 
     <TableRow
         android:background="@color/white"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date De Debut"
+            android:padding="8dp"/>
+
+        <EditText
+            android:id="@+id/editTextDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Format: aaaa-mm-jj"
+            android:inputType="date" />
+    </TableRow>
+
+    <TableRow
+        android:background="@color/white"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date De Fin"
+            android:padding="8dp"/>
+
+        <EditText
+            android:id="@+id/editTextDate2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Format: aaaa-mm-jj"
+            android:inputType="date" />
+    </TableRow>
+    <TableRow
+        android:background="@color/white"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre de jours"
+            android:padding="8dp"/>
+
+        <TextView
+            android:id="@+id/nombre_de_jour"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:hint="Entrer d'abord les dates en haut"
+            />
+    </TableRow>
+
+    <TableRow
+        android:background="@color/white"
         android:gravity="center_horizontal"
         android:layout_marginBottom="8dp">
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Submit"
+            android:text="Enregistrer la tache"
             android:elevation="2dp"/>
     </TableRow>
 </TableLayout>
