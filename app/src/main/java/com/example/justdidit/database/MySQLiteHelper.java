@@ -1,9 +1,12 @@
 package com.example.justdidit.database;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
+
+import com.example.justdidit.Tache;
 
 public class MySQLiteHelper extends SQLiteOpenHelper {
 
@@ -13,7 +16,7 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
    static  final String COLUMN_Titre  = "Titre";
    static  final String COLUMN_Description  = "Description";
    static  final String COLUMN_DateDebut  = "DateDebut";
-   static  final String COLUMN_DateFin  = "DateDebut";
+   static  final String COLUMN_DateFin  = "DateFIN";
    static  final String COLUMN_Retard  = "Retard";
    static  final String COLUMN_NbJourRetard  = "NbJourRetard";
 
@@ -28,10 +31,10 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
     private static final String DATABASE_CREATE = "create table "
             + Table_Taches
             + "(" + COLUMN_ID + " integer primary key autoincrement,"
-            + COLUMN_Titre + " text not null, "
+            + COLUMN_Titre + " TEXT not null, "
             + COLUMN_Description + " text, "
-            + COLUMN_DateDebut + " text, "
-            + COLUMN_DateFin + " text, "
+            + COLUMN_DateDebut + " DATE, "
+            + COLUMN_DateFin + " DATE, "
             + COLUMN_Retard + " integer, "
             + COLUMN_NbJourRetard + " integer"
             + ");";
@@ -55,4 +58,7 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
         db.execSQL(DATABASE_DROP_TABLE_IF_EXIT);
         onCreate(db);
     }
+
+
+
 }
