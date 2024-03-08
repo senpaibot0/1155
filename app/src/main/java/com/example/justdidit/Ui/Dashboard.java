@@ -1,9 +1,13 @@
-package com.example.justdidit;
+package com.example.justdidit.Ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import com.example.justdidit.R;
+import com.example.justdidit.Ui.ProfileFrag;
+import com.example.justdidit.Ui.StatsFrag;
 
 public class Dashboard extends AppCompatActivity {
 
