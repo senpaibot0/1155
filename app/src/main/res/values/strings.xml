@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">JustDidIt</string>
+    <string name="creationTitre">Creation Taches</string>
+    <string name="Titre">Titre :</string>
+    <string name="desc">Decription :</string>
+    <string name="dateDebut">Date de Debut :</string>
+    <string name="dateFin">Date de Fin</string>
+    <string name="Format">Format: aaaa-mm-jj</string>
+    <string name="Jours">Nombres de jours</string>
+    <string name="hint">Enregistrer d\'abord</string>
+    <string name="btnCreation">Enregistrer la tache</string>
+    <string name="btnProfile">Profile</string>
+    <string name="btmStats">Statistiques</string>
 </resources>

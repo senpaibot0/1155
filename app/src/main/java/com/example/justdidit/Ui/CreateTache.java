@@ -27,9 +27,8 @@ import java.util.Date;
         private EditText dateDebutEDT;
         private EditText dateFinEDT;
         private TextView nombreDeJourTV;
-        private Button enregistrerButton;
 
-        @Override
+     @Override
         protected void onCreate(@Nullable Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.creation_tache);
@@ -39,7 +38,7 @@ import java.util.Date;
             dateDebutEDT = findViewById(R.id.editTextDate);
             dateFinEDT = findViewById(R.id.editTextDate2);
             nombreDeJourTV = findViewById(R.id.nombre_de_jour);
-            enregistrerButton = findViewById(R.id.tacheEnregistrer);
+            Button enregistrerButton = findViewById(R.id.tacheEnregistrer);
 
             enregistrerButton.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -75,7 +74,6 @@ import java.util.Date;
 
                     } catch (SQLException e) {
                         e.printStackTrace();
-                        // Handle the exception, maybe notify the user that something went wrong
                     }
 
                     nombreDeJourTV.setText(String.valueOf(newTache.getNombreJourRestant()) );
